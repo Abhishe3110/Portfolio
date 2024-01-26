@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/ea2da59721.js" crossorigin="anonymous"></script> 
+  <script src="https://kit.fontawesome.com/ea2da59721.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <div id="header">
     <div class="container">
       <nav>
-        <img src="img/logo.png" alt="" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <img src="img/logo1.png" alt="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="small fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="small fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>UI/UX Designer</p>
-        <h1>Hi, I Am <span>Abhishek</span><br> from India</h1>
+        <h1>Hi, I Am <span>Abhishek</span><br>I am a Developer</h1>
       </div>
+      <!-- <div class="img"><img src="img/background.png" alt=""></div> -->
     </div>
-  </div> 
+
+  </div>
   <!-- about section  -->
-   
+
   <div id="about">
     <div class="container">
       <div class="row">
@@ -36,32 +42,35 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About me</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis maiores magnam, nam vel ea iure dicta eaque doloremque, officiis expedita cumque. Officia at sint quisquam unde perspiciatis autem repellat? Quas vel minima rem, laboriosam animi minus neque ab, suscipit incidunt veniam eaque natus repudiandae esse repellat porro ea ducimus.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad blanditiis maiores magnam, nam vel ea iure
+            dicta eaque doloremque, officiis expedita cumque. Officia at sint quisquam unde perspiciatis autem repellat?
+            Quas vel minima rem, laboriosam animi minus neque ab, suscipit incidunt veniam eaque natus repudiandae esse
+            repellat porro ea ducimus.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>UI/UX</span><br>Designing Web/App Interface</li> 
-            <li><span>Web Development</span><br>Web App Development</li> 
-            <li><span>App Development X</span><br>Building Android/IOS</li> 
-          </ul>
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development X</span><br>Building Android/IOS</li>
+            </ul>
           </div>
           <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>2022-Current</span><br>UI?UX Design training at Coding Ninjas</li> 
-            <li><span>2021-22</span><br>Student at IIMT Saharanpur</li> 
-            <li><span>2020-21</span><br>IIT JEE Preperaton at Self Study</li> 
-          </ul>
+            <ul>
+              <li><span>2022-Current</span><br>UI?UX Design training at Coding Ninjas</li>
+              <li><span>2021-22</span><br>Student at IIMT Saharanpur</li>
+              <li><span>2020-21</span><br>IIT JEE Preperaton at Self Study</li>
+            </ul>
           </div>
           <div class="tab-contents " id="education">
-          <ul>
-            <li><span>2017-18</span><br>High School from St Marks Academy</li> 
-            <li><span>2019-20</span><br>Senior High School at Roorkee Public School</li> 
-            <li><span>2012-17</span><br>Junior Schooling at Surya Academy</li> 
-          </ul>
+            <ul>
+              <li><span>2017-18</span><br>High School from St Marks Academy</li>
+              <li><span>2019-20</span><br>Senior High School at Roorkee Public School</li>
+              <li><span>2012-17</span><br>Junior Schooling at Surya Academy</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -75,20 +84,23 @@
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex
+            natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
           <a href="#">learn more</a>
         </div>
         <div>
           <i class="fa-regular fa-crop"></i>
           <h2>UI/UX Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex
+            natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
           <a href="#">learn more</a>
         </div>
         <div>
           <i class="fa-brands fa-app-store"></i>
           <h2>App Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
-          <a href="#">learn more</a>   
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque, nam ad, nesciunt ipsam excepturi ex
+            natus perferendis quo, aperiam quasi. Dolorum, officia?</p>
+          <a href="#">learn more</a>
         </div>
       </div>
     </div>
@@ -102,7 +114,8 @@
           <img src="img/work-1.png" alt="">
           <div class="layer">
             <h3>E-Commerce App</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus deleniti. Sapiente iure perferendis quod.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus
+              deleniti. Sapiente iure perferendis quod.</p>
             <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
@@ -110,7 +123,8 @@
           <img src="img/work-2.png" alt="">
           <div class="layer">
             <h3>Streaming App</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus deleniti. Sapiente iure perferendis quod.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus
+              deleniti. Sapiente iure perferendis quod.</p>
             <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
@@ -118,7 +132,8 @@
           <img src="img/work-3.png" alt="">
           <div class="layer">
             <h3>Portfolio App</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus deleniti. Sapiente iure perferendis quod.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequatur excepturi temporibus delectus
+              deleniti. Sapiente iure perferendis quod.</p>
             <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
@@ -132,32 +147,62 @@
       <div class="row">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fas fa-paper-plane-top"></i>Abhisheksa782@gmail.com</p>
- 
+          <p><i class="fa-sharp fa-regular fa-envelope"></i>Abhisheksa782@gmail.com</p>
+
           <p><i class="fa-solid fa-phone-volume"></i>9719652665</p>
           <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
           </div>
           <a href="img/ABHISHEK-SAINI.pdf" download class="btn btn2">Download CV</a>
-         </div>
+        </div>
         <div class="contact-right">
-           <form action="">
+          <form name="submit-to-google-sheet">
             <input type="text" name="Name" placeholder="Enter your name" required>
             <input type="email" name="Email" placeholder="Enter your email" required>
-            <textarea name="Message"rows="6" placeholder="Your message"></textarea>
+            <input type="number" name="Phone" placeholder="Enter your phone" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
-           </form>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
     <div class="copyright">
-     <p>Copyright &copy; made with <i class="fa-solid fa-heart"></i> by Abhishek Saini</p>
+      <p>Copyright &copy; made with <i class="fa-solid fa-heart"></i> by Abhishek Saini</p>
     </div>
   </div>
   <script src="script.js"></script>
+  <script>
+    let sidemenu = document.getElementById('sidemenu');
+    function openmenu() {
+      sidemenu.style.right = '0';
+    }
+    function closemenu() {
+      sidemenu.style.right = '-200px';
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywo3gcloFE2nE2zhOLpkhWFAuurOBiyex7L2UHaQ0Y8L7IbknwzXNDCN7mHKszYuuM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    let msg = document.getElementById('msg');
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.alert('Form Submitted Successfully')
+          setTimeout(() => {
+            msg.innerHTML = ''
+          }, 3000)
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
-</html>
 
+</html>
