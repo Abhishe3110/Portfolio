@@ -316,18 +316,20 @@ form .btn2{
 nav .small{ 
   display: none;
 }
-#msg{
+#msg {
   color: #61b752;
   display: block;
-  margin-top: -10px;
+  margin-top: 10px; /* Adjusted margin-top value */
+  font-size: 16px;
 }
 
+
 /* Css for small screenm */
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 600px){
   #header{
-    background: url('img/don.jpg');
-    background-repeat: no-repeat;
+    background: url('img/mephone.jpeg');
     background-size: cover;
+    position: relative;
   }
   /* #header img{
     position: relative;
